@@ -1,0 +1,72 @@
+:root {
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-dark: rgb(7, 0, 45);
+  --color-main: rgb(181, 24, 254);
+  --color-second: rgb(147, 0, 210);
+  --color-third: rgb(60, 102, 255);
+  --color-bg: rgb(244, 244, 244);
+  --text-s: 14px;
+  --text-m: 16px;
+  --text-l: 20px;
+  --text-xl: 26px;
+  --text-xxl: 36px;
+  --font-first: 'Poppins', sans-serif;
+  --font-second: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--text-dark);
+  font-size: var(--text-m);
+  font-family: var(--font-first);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 72px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 24px;
+  }
+}
